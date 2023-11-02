@@ -1,0 +1,19 @@
+<single-spa-router>
+
+  <nav>
+    <application name="@mfe/navbar"></application>
+    <!-- <application name="@mfe/sidebar"></application> -->
+  </nav>
+
+  <div id="main-content" style="height: 500px;">
+    <route default>
+      <application name="@mfe/dashboard"></application>
+    </route>
+    <route path="catalago-produtos">
+      <application name="@mfe/catalogo-produtos"></application>
+    </route>
+  </div>
+  <footer>
+    <application name="@mfe/footer"></application>
+  </footer>
+</single-spa-router>
